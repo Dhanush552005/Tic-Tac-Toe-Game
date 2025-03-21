@@ -47,5 +47,8 @@ let turno=true;
 winner.innerText=`congragulations,the winner is ${abc}`;
 small.forEach((box)=>{
     box.style.pointerEvents = "none";
+    setTimeout(() => {
+        f();
+    }, 3000);
 })
  };
