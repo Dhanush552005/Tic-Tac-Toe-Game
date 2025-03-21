@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2d2d2d;
+    font-family: Arial, sans-serif;
+}
+
+#head {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.big {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outside {
+    height: 60vmin;
+    width: 60vmin;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmin;
+    border-bottom: 6px solid #111;
+    border-top: 6px solid #111;
+    border-radius: 1rem;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: white;
+    border-radius: 1rem;
+    border: none;
+    font-size: 9vmin;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #f0f0f0;
+}
+
+#but {
+    text-align: center;
+}
+
+#res {
+    background-color: black;
+    color: gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#res:hover {
+    background-color: #555;
+}
+
+#win {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .big {
+        height: 80vh;
+    }
+
+    .outside {
+        height: 70vmin;
+        width: 70vmin;
+    }
+
+    .box {
+        font-size: 8vmin;
+    }
+}
